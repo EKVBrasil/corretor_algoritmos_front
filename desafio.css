@@ -82,6 +82,93 @@ button#enviar {
 .CodeMirror {
    height: 100%;
    font-size: 16px;
-   border: 1px solid #ccc;
-   border-radius: 6px;
+   border-radius: 8px;
+   background-color: #282c34; /* Fundo escuro */
+   color: #abb2bf; /* Cor da fonte clara */
+   border: 1px solid #3a3f4b;
+   font-family: "Fira Mono", monospace;
+   box-shadow: 0 0 8px rgba(100, 150, 250, 0.4);
+}
+
+.resultado {
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-top: 15px;
+  min-height: 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estados diferentes */
+.resultado.sucesso {
+  background-color: #e6f4ea;
+  color: #2f8132;
+  border: 2px solid #2f8132;
+}
+
+.resultado.erro {
+  background-color: #fdecea;
+  color: #cc1f1a;
+  border: 2px solid #cc1f1a;
+}
+
+.resultado.aviso {
+  background-color: #fff4e5;
+  color: #b36b00;
+  border: 2px solid #b36b00;
+}
+/* Cor das linhas */
+.CodeMirror-gutters {
+   background-color: #21252b;
+   border-right: 1px solid #3a3f4b;
+   color: #636d83;
+}
+
+/* Cor dos números das linhas */
+.CodeMirror-linenumber {
+   color: #636d83;
+}
+
+/* Cursor */
+.CodeMirror-cursor {
+   border-left: 2px solid #528bff;
+}
+
+/* Highlight da linha atual */
+.CodeMirror-activeline-background {
+   background: #2c313c;
+}
+
+/* Seleção de texto */
+.CodeMirror ::selection {
+   background: #264f78;
+}
+
+/* Comentários */
+.cm-comment {
+   color: #5c6370;
+   font-style: italic;
+}
+
+/* Strings */
+.cm-string {
+   color: #98c379;
+}
+
+/* Palavras-chave */
+.cm-keyword {
+   color: #c678dd;
+   font-weight: bold;
+}
+
+/* Funções */
+.cm-def {
+   color: #61afef;
+}
+
+/* Números */
+.cm-number {
+   color: #d19a66;
 }
