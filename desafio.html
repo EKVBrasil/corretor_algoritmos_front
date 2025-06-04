@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AlgoFix - Resolver Desafio</title>
-  <link rel="stylesheet" href="desafio.css" />
-  <!-- CodeMirror (JavaScript editor) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.15/lib/codemirror.css" />
-<script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.15/lib/codemirror.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.15/mode/javascript/javascript.js"></script>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AlgoFix - Resolver Desafio</title>
+      <link rel="stylesheet" href="desafio.css" />
+      <!-- CodeMirror (JavaScript editor) -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/codemirror@5.65.15/lib/codemirror.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.15/lib/codemirror.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.15/mode/javascript/javascript.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1><a href="index.html" class="logo-link">AlgoFix</a></h1>
+         <a href="index.html" class="voltar">← Voltar</a>
+      </header>
 
-</head>
-<body>
-  <header>
-    <h1>AlgoFix</h1>
-    <a href="index.html" class="voltar">← Voltar</a>
-  </header>
+      <main class="container">
+         <section class="enunciado" id="enunciado">
+            <!-- Enunciado carregado pelo JS -->
+         </section>
 
-  <main class="container">
-    <section class="enunciado" id="enunciado">
-      <!-- Enunciado carregado pelo JS -->
-    </section>
+         <section class="editor">
+            <div id="editor" style="height: 400px"></div>
+            <button id="enviar">Enviar Resposta</button>
+         </section>
+      </main>
 
-    <section class="editor">
-        <div id="editor" style="height: 400px;"></div>
-        <button id="enviar">Enviar Resposta</button>
-    </section>
-  </main>
-
-  <script src="desafio.js"></script>
-</body>
+      <script src="desafio.js"></script>
+   </body>
 </html>

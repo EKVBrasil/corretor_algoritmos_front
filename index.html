@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlgoFix - Pratique Algoritmos</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>AlgoFix</h1>
-    <button id="loginBtn">Entrar / Cadastrar</button>
-  </header>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AlgoFix - Pratique Algoritmos</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <header>
+         <h1><a href="index.html" class="logo-link">AlgoFix</a></h1>
+         <button id="loginBtn">Entrar / Cadastrar</button>
+      </header>
 
-  <main>
-    <section class="intro">
-      <h2>Desafios de Programação</h2>
-      <p>Escolha um desafio abaixo e comece a codar!</p>
-    </section>
+      <main>
+         <section class="intro">
+            <h2>Desafios de Programação</h2>
+            <p>Escolha um desafio abaixo e comece a codar!</p>
+         </section>
 
-    <section class="challenges" id="challengeList">
-      <!-- Os desafios serão carregados aqui -->
-    </section>
-  </main>
+         <section class="challenges" id="challengeList">
+            <!-- Os desafios serão carregados aqui -->
+         </section>
+      </main>
 
-  <!-- Modal de Login/Cadastro -->
-<div class="modal" id="authModal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      
-      <div class="tabs">
-        <button class="tab active" data-tab="login">Login</button>
-        <button class="tab" data-tab="register">Cadastro</button>
+      <!-- Modal de Login/Cadastro -->
+      <div class="modal" id="authModal">
+         <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+
+            <div class="tabs">
+               <button class="tab active" data-tab="login">Login</button>
+               <button class="tab" data-tab="register">Cadastro</button>
+            </div>
+
+            <div class="tab-content active" id="login">
+               <h3>Login</h3>
+               <input type="email" placeholder="Email" />
+               <input type="password" placeholder="Senha" />
+               <button class="submit-btn">Entrar</button>
+            </div>
+
+            <div class="tab-content" id="register">
+               <h3>Cadastro</h3>
+               <input type="text" placeholder="Nome completo" />
+               <input type="email" placeholder="Email" />
+               <input type="password" placeholder="Senha" />
+               <button class="submit-btn">Cadastrar</button>
+            </div>
+         </div>
       </div>
-  
-      <div class="tab-content active" id="login">
-        <h3>Login</h3>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Senha" />
-        <button class="submit-btn">Entrar</button>
-      </div>
-  
-      <div class="tab-content" id="register">
-        <h3>Cadastro</h3>
-        <input type="text" placeholder="Nome completo" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Senha" />
-        <button class="submit-btn">Cadastrar</button>
-      </div>
-    </div>
-  </div>
-  
 
-  <script src="script.js"></script>
-</body>
+      <script src="script.js"></script>
+   </body>
 </html>
